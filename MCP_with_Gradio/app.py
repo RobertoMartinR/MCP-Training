@@ -1,6 +1,6 @@
 # All of this is part of the MCP course by Hugging Face to learn and test how MCP works
 
-# Gradio needs an app file to create the space
+# Gradio needs an app file to create the server so that's why this is called app.py
 
 import json
 import gradio as gr
@@ -38,4 +38,8 @@ demo = gr.Interface(
 
 # Launch the interface and MCP server
 if __name__ == "__main__":
-    demo.launch(mcp_server=True)
+    demo.launch(
+        server_name="127.0.0.1",
+        server_port=7860,
+        mcp_server=True
+    )

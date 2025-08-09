@@ -1,0 +1,10 @@
+{
+	"model": "gpt-oss:20b",
+	"endpointUrl": "http://localhost:11434/v1",
+	"servers": [
+		{
+			"type": "sse",
+			"url": "http://127.0.0.1:7860/gradio_api/mcp/sse"
+		}
+	]
+}
